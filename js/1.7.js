@@ -8,4 +8,9 @@ let result3= result2 * 50;
 let result4= result3 - birth;
 let result5= result4 + 1766;
 
+console.log(result1);
+console.log(result2);
 console.log(result3);
+console.log(result4);
+console.log(result5);
+
