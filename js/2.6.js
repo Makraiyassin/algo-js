@@ -1,7 +1,7 @@
 const readlineSync = require("readline-sync");
 let number = Number (readlineSync.question("enter a number between 1 and 7: "));
 if(number==1){
-    console.log("Today is Monday");
+    console.log("Monday");
 }else if(number==2){
     console.log("Tuesday");
 }else if(number==3){
