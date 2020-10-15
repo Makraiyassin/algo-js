@@ -1,9 +1,9 @@
 const readlineSync = require("readline-sync");
-let n = Number (readlineSync.question("enter a number between 1 and 10: "));
+let n = readlineSync.question("enter a number between 1 and 10: ");
 
 
 function rand10(){ 
-    return Math.floor(Math.random()*11);
+    return Math.floor(Math.random()*10)+1;
 }
 function multiRand(n){
     let arr = [];
@@ -15,4 +15,3 @@ function multiRand(n){
 }
 
 console.log(multiRand(n));
-
