@@ -7,7 +7,7 @@ class rectangle{
     }
     collides(otherRectangle){
         if(otherRectangle.topLeftXPos<=this.topLeftXPos+this.width || otherRectangle.topLeftYPos<=this.topLeftYPos+this.lenght
-            /*|| otherRectangle.topLeftXPos+otherRectangle.width>= this.topLeftXPos ||  otherRectangle.topLeftYPos+otherRectangle.lenght>= this.topLeftYPos*/){
+            /*|| otherRectangle.topLeftXPos+otherRectangle.width>= this.topLeftXPos &&  otherRectangle.topLeftYPos+otherRectangle.lenght>= this.topLeftYPos*/){
             return true
         } else{
             return false
@@ -20,4 +20,4 @@ let YourRectangle = new rectangle (5,5,3,3);
 
 console.log(MyRectangle);
 console.log(YourRectangle);
-console.log(MyRectangle.collides(YourRectangle));
+console.log("collide: "+MyRectangle.collides(YourRectangle));
