@@ -35,6 +35,7 @@ function randomizeCast(tvSerie){
 
 console.log(randomizeCast(askTvSerie()));
 
+//______________________________________________________________________________________________________________
 
 // let random1 = Math.floor(Math.random()*1);
 // let random2 = Math.floor(Math.random()*2);
