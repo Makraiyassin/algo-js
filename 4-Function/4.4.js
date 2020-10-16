@@ -1,8 +1,7 @@
 const readlineSync = require("readline-sync");
-let n = Number (readlineSync.question("enter a number between 1 and 10: "));
-let sum = 0;
+let n = readlineSync.question("enter a number between 1 and 10: ");
 let arr = [];
-
+let sum = 0;
 
 function rand10(){ 
     return Math.floor(Math.random()*10)+1;
@@ -10,7 +9,7 @@ function rand10(){
 
 function multiRand(n){
     arr = [];
-    for(i=0; i<n; i++){
+    for(let i=0; i<n; i++){
         let x = rand10();
         arr[i] = x;
     }
@@ -37,8 +36,3 @@ console.log("array with random numbers: ", multiRand(n));
 console.log("the average number of the array with random numbers is: ",average(arr));
 console.log("the smallest number of the array with random numbers is: ",min(arr));
 console.log("the biggest average number of the array with random numbers is: ",max(arr));
-
-
-
-// let add3 = n+3;
-// console.log(add3);
