@@ -16,4 +16,5 @@ function askTvSerie(){
     }
     return object
 }
-console.log(JSON.stringify(askTvSerie(),null,5));
+// console.log(JSON.stringify(askTvSerie(),null,5));
+console.log(askTvSerie());
